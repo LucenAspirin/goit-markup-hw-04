@@ -114,7 +114,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--nav-link);
+  color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 0.87;
