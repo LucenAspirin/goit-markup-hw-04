@@ -93,7 +93,7 @@ a {
   color: var(--accent-color);
 }
 .auth-nav {
-  display: flex;
+  display: inline-flex;
   margin-left: auto;
 
   font-weight: 500;
@@ -104,11 +104,9 @@ a {
 .auth-nav .item + .item {
   margin-left: 30px;
 }
-.item::before {
-  display: inline-block;
-}
+
 .auth-nav .link-namber {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -118,8 +116,9 @@ a {
   line-height: 0.87;
   letter-spacing: 0.02em;
 }
-.auth-nav .link-namber:hover,
-.auth-nav .link-namber:focus {
+
+.auth-nav a:hover,
+.auth-nav a:focus {
   color: var(--accent-color);
 }
 .link-namber {
@@ -128,6 +127,22 @@ a {
   font-size: 14px;
   line-height: 1.14;
 }
+.mail-icon:hover {
+  color: var(--accent-color);
+}
+.mail-icon {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  fill: #757575;
+}
+.tel-icon {
+  width: 10px;
+  height: 14.94px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
 /* скрытый h1 */
 .onli {
   display: none;
@@ -256,9 +271,9 @@ a {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  fill: #506cd3;
 }
-.networks:hover {
+.social-networks .networks-list a:hover,
+.social-networks .networks-list a:focus {
   background-color: var(--accent-color);
 }
 .networks-list {
